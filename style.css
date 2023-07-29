@@ -1,0 +1,45 @@
+/* ===== Global CSS */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+:root{
+    --body-font-family : 'Lora', serif;
+    --primary-font-family : 'Roboto', sans-serif;
+
+    --primary-color : #FAD364;
+    --secondary-color: #34342C;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: var(--body-font-family);
+    color: var(--secondary-color);
+}
+
+button{
+    border: none;
+    outline: none;
+}
+
+/* === Header Section */
+
+
+
+/* ===== Media Screen */
+@media only screen and (max-width: 576px) {
+    
+}
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+    
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    
+}
+@media only screen and (min-width: 1200px) {
+    
+}
