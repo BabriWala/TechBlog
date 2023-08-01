@@ -49,7 +49,7 @@ header{
     height: 100vh;
     background: url('https://images.pexels.com/photos/1597776/pexels-photo-1597776.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center;
     background-size: 100%;
-    background-color: rgba(0, 0, 0, 0.366);
+    background-color: rgba(0, 0, 0, 0.609);
     background-blend-mode: multiply;
 }
 
@@ -60,9 +60,51 @@ nav{
     margin-bottom: 20px;
 }
 
+.logo{
+    color: #F8F9FA;
+    font-family: 'Times New Roman', serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.nav-link-container li a{
+    color: #FFF;
+    font-family: var(--primary-font-family);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-right: 10px;
+}
+
 nav .container{
     display: flex;
     justify-content: space-between;
+}
+
+.btn{
+    padding: 15px 30px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.765);
+    cursor: pointer;
+    color: #fff;
+    display: inline-block;
+    border: 1px solid #fff;
+    border-color: transparent;
+    margin: 10px 0;
+    transition: 0.3s all ease;
+}
+
+.btn:hover{
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+.fa-brands{
+    width: 20px;
+    height: 20px;
 }
 
 /* .banner-section{
@@ -79,6 +121,67 @@ nav .container{
     /* width: 100%; */
     
 }
+
+.banner__tag{
+    padding: 10px 5px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.banner__title{
+    color: #FFF;
+font-family: Lora;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+width: 70%;
+margin: 20px auto;
+
+}
+
+.banner__horizontal-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner__date{
+    color: #E5E5E5;
+font-family: Lora;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin: 10px 10px
+}
+
+.horizontal-line{
+    width: 30px;
+    height: 1px;
+    background: #E5E5E5;
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ===== Media Screen */
 @media only screen and (max-width: 576px) {
