@@ -111,6 +111,44 @@ nav .container{
 === About ===
 */
 
+.about{
+    margin: 80px auto
+}
+
+.about__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.about__container:last-of-type{
+    flex-direction: row-reverse;
+}
+
+.about__left-side,
+.about__right-side{
+    width: 45%;
+}
+
+.about__left-side img{
+    border-radius: 10px;
+}
+
+.about__right-side h3{
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.about__right-side p{
+    text-align: justify;
+    margin-top: 10px;
+    font-size: 18px;
+    font-style: normal;
+}
+
+
+
 /* === Featured Blog Item */
 .featured-blog{
     margin: 150px auto;
