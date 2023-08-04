@@ -1,20 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog Details</title>
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <!-- Header Section Start -->
     <header>
-        <!-- Navbar Section Start -->
-        <nav>
+      <!-- Navbar Section Start -->
+      <nav>
+        <div class="container">
           <div>
-            <span>TechBlog</span>
+            <span class="logo">TechBlog</span>
           </div>
           <div>
-            <ul>
+            <ul class="nav-link-container">
               <li><a href="#">Home</a></li>
               <li><a href="#">About</a></li>
               <li><a href="#">Blogs</a></li>
@@ -22,97 +31,168 @@
             </ul>
           </div>
           <div>
-            <img src="#" />
-            <img src="#" />
-            <img src="#" />
-            <img src="#" />
+            <li>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-github"></i></a>
+            </li>
           </div>
-        </nav>
-        <!-- Navbar Section End -->
-        <section>
-          <h6>JavaScript</h6>
-          <h2>
+        </div>
+      </nav>
+      <!-- Navbar Section End -->
+      <section class="container banner-section">
+        <div class="banner">
+          <h6 class="banner__tag">JavaScript</h6>
+          <h2 class="banner__title">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet,
             repellat?
           </h2>
-          <div>
-            <span></span>
-            <span>06.06.2006</span>
-            <span></span>
+          <div class="horizontal-container">
+            <span class="horizontal-line"></span>
+            <span class="banner__date">Lorem ipsum dolor sit amet.</span>
+            <span class="horizontal-line"></span>
           </div>
-          <button>Read More</button>
-        </section>
-      </header>
-      <!-- Header Section Start -->
-      <!-- Blog Details Start-->
-      <main>
-        <div>
-            <img src="" alt="">
-            <h6>Lorem, ipsum dolor.</h6>
-            <div>
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-            </div>
         </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis magni a vero tempore, saepe nihil error libero doloremque commodi rem optio pariatur officia, laboriosam ab. Cumque fugiat sapiente rerum mollitia facere repellendus quis molestiae, alias corporis magni. Ex autem provident, ut, id facere esse iure assumenda porro obcaecati enim odit cumque officia inventore similique? Soluta quasi dolorum non officiis voluptatem! Delectus praesentium repellat eum explicabo. Obcaecati corporis esse possimus dolorem neque repellat quia dolores, autem, cumque illo eum deserunt nostrum animi labore dignissimos et sapiente nemo tempora molestias vero quae, beatae praesentium perferendis! Maiores autem, eligendi sint, architecto ex molestiae numquam voluptatibus animi ipsum optio nostrum sit corrupti eaque commodi quia asperiores quasi explicabo consectetur assumenda eos! Nihil consequatur hic optio soluta dolorum. Quibusdam voluptatum perferendis corrupti qui, minima atque repellendus eum expedita omnis enim repellat consectetur nisi debitis facere velit labore iure accusamus placeat ratione ut consequatur, cupiditate doloribus id. Expedita vero animi blanditiis optio a. Voluptas ipsam quidem, quaerat nihil possimus velit modi autem sed officiis eveniet perferendis minima quos perspiciatis aliquid asperiores laboriosam, quisquam voluptatibus earum eius quo voluptatem. Quia veritatis iusto veniam ipsa? Voluptatum quasi vero eveniet id, pariatur reprehenderit, incidunt tempore ipsum accusamus dolores itaque.</p>
-        <h3>03.03.2003</h3>
-        <div><span>Adventure</span><span>Adventure</span><span>Adventure</span></div>
-      </main>
-      <!-- Related Post Start -->
-      <div>
-        <span>JavaScript</span>
+      </section>
+    </header>
+    <!-- Header Section Start -->
+    <main>
+      <!-- Blog sections -->
+      <section class="container blog">
+        <div class="blog__author">
+          <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=600" class="blog__author-image">
+          <div class="blog__author-container">
+            <h6 class="blog__author-designation">Lorem ipsum dolor sit amet.</h6>
+            <p class="blog__author-description">Lorem ipsum dolor sit.</p>
+          </div>
+        </div>
+        <div class="blog__author-social">
+          <li>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+          </li>
+        </div>
+        <div class="horizontal-container blog__horizontal">
+          <span class="horizontal-line"></span>
+          <span class="banner__date">03.05.2023</span>
+          <span class="horizontal-line"></span>
+        </div>
+        <p class="blog__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam pariatur commodi corporis consectetur rerum, vero quisquam sunt illo hic. Neque, voluptates beatae aperiam earum similique accusamus iste sit blanditiis itaque magnam, tenetur doloribus assumenda! Quidem fuga tenetur corrupti, ipsa doloribus molestias tempore voluptas hic perspiciatis. Non similique harum omnis vitae? <br><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore placeat magnam deleniti accusantium nesciunt itaque accusamus reprehenderit ex, iusto, odit esse delectus! Adipisci libero explicabo illo nobis beatae atque possimus?<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis non, atque aliquam, accusamus consectetur cumque esse tempora fugiat ratione, ab sequi inventore iusto quos quidem dignissimos ipsa dicta rem beatae? Corrupti eveniet quidem quis quo dolorum perferendis, cum iusto rerum?</p>
+        <div class="blog__banner-tag">
+          <h6 class="banner__tag blog__tag">JavaScript</h6>
+          <h6 class="banner__tag blog__tag">JavaScript</h6>
+          <h6 class="banner__tag blog__tag">JavaScript</h6>
+        </div>
 
+      </section>
+
+      <!-- Featured Blog Section Start -->
+      <section class="container featured-blog">
+        <h2 class="featured-blog__title">Related Post</h2>
+        <div class="featured-blog__items-container">
+          <div class="featured-blog-item">
+            <span class="featured-blog-item__tag">JavaScript</span>
+            <div class="featured-blog-item__container">
+              <h6 class="featured-blog-item__date">03.03.2003</h6>
+              <h4 class="featured-blog-item__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
+                fuga?
+              </h4>
+              <p class="featured-blog-item__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+                quaerat ea illum perspiciatis laborum, eaque aliquid aspernatur
+                ipsa, assumenda repellendus laudantium accusamus blanditiis sit
+                earum. Officiis quidem numquam alias nostrum.
+              </p>
+            </div>
+          </div>
+          <div class="featured-blog-item">
+            <span class="featured-blog-item__tag">JavaScript</span>
+            <div class="featured-blog-item__container">
+              <h6 class="featured-blog-item__date">03.03.2003</h6>
+              <h4 class="featured-blog-item__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
+                fuga?
+              </h4>
+              <p class="featured-blog-item__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+                quaerat ea illum perspiciatis laborum, eaque aliquid aspernatur
+                ipsa, assumenda repellendus laudantium accusamus blanditiis sit
+                earum. Officiis quidem numquam alias nostrum.
+              </p>
+            </div>
+          </div>
+          <div class="featured-blog-item">
+            <span class="featured-blog-item__tag">JavaScript</span>
+            <div class="featured-blog-item__container">
+              <h6 class="featured-blog-item__date">03.03.2003</h6>
+              <h4 class="featured-blog-item__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
+                fuga?
+              </h4>
+              <p class="featured-blog-item__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+                quaerat ea illum perspiciatis laborum, eaque aliquid aspernatur
+                ipsa, assumenda repellendus laudantium accusamus blanditiis sit
+                earum. Officiis quidem numquam alias nostrum.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Best Topics Section End -->
+    </main>
+    <!-- Footer Section Start -->
+    <footer>
+      <div class="container footer-container">
         <div>
-          <h6>03.03.2003</h6>
-          <h4>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
-            fuga?
-          </h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-            quaerat ea illum perspiciatis laborum, eaque aliquid aspernatur
-            ipsa, assumenda repellendus laudantium accusamus blanditiis sit
-            earum. Officiis quidem numquam alias nostrum.
-          </p>
+          <h3>Contact the Publisher</h3>
+          <h6>mike@runo.com</h6>
+          <h6>+944 450 904 505</h6>
+        </div>
+        <div>
+          <h3>Explorate</h3>
+          <h6>About</h6>
+          <h6>About</h6>
+          <h6>About</h6>
+        </div>
+        <div>
+          <h3>Headquarter</h3>
+          <h6>About</h6>
+          <h6>About</h6>
+          <h6>About</h6>
+        </div>
+        <div>
+          <h3>Connections</h3>
+          <img />
+          <img />
+          <img />
+          <img />
         </div>
       </div>
-      <!-- Related Post End -->
-      <!-- Blog Details End -->
-          <!-- Footer Section Start -->
-    <footer>
-        <div>
-          <div>
-            <h3>Contact the Publisher</h3>
-            <h6>mike@runo.com</h6>
-            <h6>+944 450 904 505</h6>
-          </div>
-          <div>
-            <h3>Explorate</h3>
-            <h6>About</h6>
-            <h6>About</h6>
-            <h6>About</h6>
-          </div>
-          <div>
-            <h3>Headquarter</h3>
-            <h6>About</h6>
-            <h6>About</h6>
-            <h6>About</h6>
-          </div>
-          <div>
-            <h3>Connections</h3>
-            <img />
-            <img />
-            <img />
-            <img />
-          </div>
-        </div>
-        <div>
-          <span>2021 | RUNO Publisher Studio</span>
-          <span>Subscribe Now</span>
-        </div>
-      </footer>
-      <!-- Footer Section End -->
-</body>
+    </footer>
+    <!-- Footer Section End -->
+    <!-- Extra Footer -->
+    <section class="extra-footer">
+      <div class="container extra-footer__container">
+        <span>2021 | RUNO Publisher Studio</span>
+        <span>Subscribe Now</span>
+      </div>
+    </section>
+  </body>
 </html>
