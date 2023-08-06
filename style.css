@@ -470,6 +470,9 @@ footer{
     header{
         height: auto;
         padding-bottom: 20px;
+        background: url('https://images.pexels.com/photos/2007647/pexels-photo-2007647.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center;
+        background-color: rgba(0, 0, 0, 0.63);
+        
     }
     .container{
         max-width: 100%;
@@ -488,6 +491,41 @@ footer{
         font-size: 26px;
         width: 100%;
     }
+
+
+    /* === topics section
+    */
+
+    .topics-section{
+        margin: 50px auto;
+    }
+
+    .see-all{
+        display: none;
+    }
+
+    .topics-container{
+        grid-template-columns: 1fr;
+    }
+
+    /* featured slider */
+    .featured-slider{
+        background: url('https://images.pexels.com/photos/2007647/pexels-photo-2007647.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat;
+        background-color: rgba(0, 0, 0, 0.63);
+        padding: 20px;
+    }
+
+    .featured-slider__title{
+        font-size: 26px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .featured-slider__description{
+        width: 100%;
+    }
+
+    
 }
 @media only screen and (min-width: 576px) and (max-width: 768px) {
     
