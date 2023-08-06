@@ -467,7 +467,27 @@ footer{
 
 /* ===== Media Screen */
 @media only screen and (max-width: 576px) {
+    header{
+        height: auto;
+        padding-bottom: 20px;
+    }
+    .container{
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    nav .container div:nth-child(2){
+        display: none;
+    }
     
+    .banner{
+        position: static;
+    }
+
+    .banner__title{
+        font-size: 26px;
+        width: 100%;
+    }
 }
 @media only screen and (min-width: 576px) and (max-width: 768px) {
     
