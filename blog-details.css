@@ -174,8 +174,64 @@ margin: 10px 10px
 /* == blog
  */
 .blog{
-    color: black;
+    margin: 100px auto;
 }
+
+.blog__author img{
+    width: 100px;
+    border-radius: 15px;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.blog__author-designation{
+    text-align: center;
+    font-size: 26px;
+}
+
+.blog__author-description{
+    text-align: center;
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.blog__author-social{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.blog__author-social li a i{
+    color: #343A40;
+}
+
+.blog__horizontal .horizontal-line,
+.blog__horizontal .horizontal-line{
+    background-color: #212529;
+}
+
+.blog__horizontal .banner__date{
+    color: #212529; 
+}
+
+.blog__description{
+    margin-top: 30px;
+    text-align: justify;
+    margin-bottom: 50px;
+}
+
+.blog__banner-tag{
+    margin: 20px 0;
+}
+
+.blog__tag{
+    border: 1px solid #212529;
+    padding: 10px;
+    color: #212529;
+}
+
+
 
 
 /* === Featured Blog Item */
