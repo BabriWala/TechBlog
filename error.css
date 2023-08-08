@@ -131,16 +131,16 @@ nav .container{
 }
 
 .error__left-side{
-    width: 30%;
+    width: 50%;
 }
 
 .error__right-side{
-    width: 60%;
+    width: 50%;
     text-align: center;
 }
 
 .error__main-title{
-    font-size: 400px;
+    font-size: 280px;
 }
 
 .error__main-title > span:first-of-type,
@@ -204,17 +204,197 @@ footer{
 
 /* ===== Media Screen */
 @media only screen and (max-width: 576px) {
+    header{
+        height: auto;
+        padding-bottom: 20px;
+        background-image: url('https://images.pexels.com/photos/2007647/pexels-photo-2007647.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+        background-color: rgba(0, 0, 0, 0.63);
+        
+    }
+    .container{
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    nav .container div:nth-child(2){
+        display: none;
+    }
+    
+    .banner{
+        position: static;
+    }
+
+    .banner__title{
+        font-size: 26px;
+        width: 100%;
+    }
+
+    /* 
+=== Error ===
+*/
+    .error{
+        padding: 50px 10px;
+        flex-direction: column-reverse;
+    }
+
+    .error__title{
+        font-size: 60px;
+        margin-bottom: 10px;
+    }
+
+    .error__description{
+        font-size: 40px;
+        margin: 15px 0;
+    }
+
+    .error__left-side{
+        width: 100%;
+        text-align: center;
+    }
+
+    .error__right-side{
+        width: 100%;
+    }
+
+    .error__main-title{
+        font-size: 200px;
+    }
+
+
+
+    /* Footer */
+    footer{
+        padding: 50px 0;
+    }
+
+    .footer-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .extra-footer{
+        padding: 20px;
+    }
+
+    .extra-footer__container{
+        flex-direction: column;
+    }
     
 }
 @media only screen and (min-width: 576px) and (max-width: 768px) {
+    header{
+        height: auto;
+        padding-bottom: 20px;
+        background-image: url('https://images.pexels.com/photos/2007647/pexels-photo-2007647.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+        background-color: rgba(0, 0, 0, 0.63);
+        
+    }
+    .container{
+        max-width: 540px;
+        margin: 0 auto
+    }
+
+    nav .container div:nth-child(2){
+        display: block;
+    }
     
+    .banner{
+        position: static;
+    }
+
+    .banner__title{
+        font-size: 26px;
+        width: 100%;
+    }
+
+        /* 
+    =header== Error ===
+    */
+    .error{
+        padding: 50px 10px;
+        flex-direction: column-reverse;
+    }
+
+    .error__title{
+        font-size: 60px;
+        margin-bottom: 10px;
+    }
+
+    .error__description{
+        font-size: 40px;
+        margin: 15px 0;
+    }
+
+    .error__left-side{
+        width: 100%;
+        text-align: center;
+    }
+
+    .error__right-side{
+        width: 100%;
+    }
+
+    .error__main-title{
+        font-size: 300px;
+    }
+
+
+    /* Footer */
+    footer{
+        padding: 50px 0;
+    }
+
+    .footer-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .extra-footer{
+        padding: 20px;
+    }
+
+    .extra-footer__container{
+        flex-direction: row ;
+    }
 }
 @media only screen and (min-width: 768px) and (max-width: 992px) {
+    header{
+        background-image: url('https://images.pexels.com/photos/2007647/pexels-photo-2007647.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+        background-color: rgba(0, 0, 0, 0.63);
+        
+    }
+    .container{
+        max-width: 720px;
+        margin: 0 auto
+    }
     
-}
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
-    
-}
-@media only screen and (min-width: 1200px) {
-    
+
+    .banner__title{
+        font-size: 36px;
+        width: 100%;
+    }
+
+    .banner{
+        bottom: 10%;
+    }
+
+    /* Error */
+    .error__main-title{
+        font-size: 200px;
+    }
+
+     /* Footer */
+     footer{
+        padding: 50px 0;
+    }
+
+    .footer-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .extra-footer{
+        padding: 20px;
+    }
+
+    .extra-footer__container{
+        flex-direction: row ;
+    }
 }
