@@ -123,7 +123,7 @@ img{
 /* === Header Section */
 header{
     height: 100vh;
-    /* background: url('https://images.pexels.com/photos/1597776/pexels-photo-1597776.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center; */
+    background: url('https://images.pexels.com/photos/1597776/pexels-photo-1597776.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center;
     background-size: 100%;
     background-color: rgba(0, 0, 0, 0.609);
     background-blend-mode: multiply;
@@ -366,7 +366,7 @@ margin-bottom: 20px;
 
 /* ==== Feature Slider */
 .featured-slider{
-    /* background: url('https://images.pexels.com/photos/1597776/pexels-photo-1597776.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center; */
+    background: url('https://images.pexels.com/photos/1597776/pexels-photo-1597776.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center;
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.609);
     background-blend-mode: multiply;
@@ -428,7 +428,7 @@ margin-bottom: 20px;
 }
 
 .featured-blog-item{
-    /* background: url('https://images.pexels.com/photos/1597776/pexels-photo-1597776.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat; */
+    background: url('https://images.pexels.com/photos/1597776/pexels-photo-1597776.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat;
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.609);
     background-blend-mode: multiply;
@@ -542,7 +542,7 @@ footer{
     header{
         height: auto;
         padding-bottom: 20px;
-        /* background-image: url('https://images.pexels.com/photos/2007647/pexels-photo-2007647.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); */
+        background-image: url('https://images.pexels.com/photos/2007647/pexels-photo-2007647.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
         background-color: rgba(0, 0, 0, 0.63);
         
     }
@@ -583,7 +583,7 @@ footer{
     /* featured slider */
     
     .featured-slider{
-        /* background-image: url('https://images.pexels.com/photos/2007647/pexels-photo-2007647.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); */
+        background-image: url('https://images.pexels.com/photos/2007647/pexels-photo-2007647.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
         background-color: rgba(0, 0, 0, 0.63);
         padding: 20px;
     }
@@ -635,7 +635,7 @@ footer{
     header{
         height: auto;
         padding-bottom: 20px;
-        /* background-image: url('https://images.pexels.com/photos/2007647/pexels-photo-2007647.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); */
+        background-image: url('https://images.pexels.com/photos/2007647/pexels-photo-2007647.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
         background-color: rgba(0, 0, 0, 0.63);
         
     }
@@ -676,7 +676,7 @@ footer{
     /* featured slider */
     
     .featured-slider{
-        /* background-image: url('https://images.pexels.com/photos/2007647/pexels-photo-2007647.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); */
+        background-image: url('https://images.pexels.com/photos/2007647/pexels-photo-2007647.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
         background-color: rgba(0, 0, 0, 0.63);
         padding: 20px;
     }
@@ -723,7 +723,7 @@ footer{
 }
 @media only screen and (min-width: 768px) and (max-width: 992px) {
     header{
-        /* background-image: url('https://images.pexels.com/photos/2007647/pexels-photo-2007647.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); */
+        background-image: url('https://images.pexels.com/photos/2007647/pexels-photo-2007647.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
         background-color: rgba(0, 0, 0, 0.63);
         
     }
@@ -760,7 +760,7 @@ footer{
     /* featured slider */
     
     .featured-slider{
-        /* background-image: url('https://images.pexels.com/photos/2007647/pexels-photo-2007647.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); */
+        background-image: url('https://images.pexels.com/photos/2007647/pexels-photo-2007647.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
         background-color: rgba(0, 0, 0, 0.63);
         padding: 50px;
     }
