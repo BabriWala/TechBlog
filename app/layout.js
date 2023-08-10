@@ -11,7 +11,89 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body>
+        <header>
+          <nav>
+            <div className="container">
+              <div>
+                <span className="logo">TechBlog</span>
+              </div>
+              <div>
+                <ul className="nav-link-container">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Blogs</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </div>
+              <div>
+                <li>
+                  <a href="#"><i className="fa-brands fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i className="fa-brands fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i className="fa-brands fa-linkedin"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i className="fa-brands fa-github"></i></a>
+                </li>
+              </div>
+            </div>
+          </nav>
+          <section className="container banner-section">
+            <div className="banner">
+              <h6 className="banner__tag">JavaScript</h6>
+              <h2 className="banner__title">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet,
+                repellat?
+              </h2>
+              <div className="horizontal-container">
+                <span className="horizontal-line"></span>
+                <span className="banner__date">06.06.2006</span>
+                <span className="horizontal-line"></span>
+              </div>
+              <button className="btn">Read More</button>
+            </div>
+          </section>
+        </header>
+        {children}
+        <footer>
+          <div className="container footer-container">
+            <div>
+              <h3>Contact the Publisher</h3>
+              <h6>mike@runo.com</h6>
+              <h6>+944 450 904 505</h6>
+            </div>
+            <div>
+              <h3>Explorate</h3>
+              <h6>About</h6>
+              <h6>About</h6>
+              <h6>About</h6>
+            </div>
+            <div>
+              <h3>Headquarter</h3>
+              <h6>About</h6>
+              <h6>About</h6>
+              <h6>About</h6>
+            </div>
+            <div>
+              <h3>Connections</h3>
+              <img />
+              <img />
+              <img />
+              <img />
+            </div>
+          </div>
+        </footer>
+        <section className="extra-footer">
+          <div className="container extra-footer__container">
+            <span>2021 | RUNO Publisher Studio</span>
+            <span>Subscribe Now</span>
+          </div>
+        </section>
+        </body>
     </html>
   )
 }
