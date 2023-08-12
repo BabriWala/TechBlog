@@ -13,42 +13,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        
         {children}
-        <footer>
-          <div className="container footer-container">
-            <div>
-              <h3>Contact the Publisher</h3>
-              <h6>mike@runo.com</h6>
-              <h6>+944 450 904 505</h6>
-            </div>
-            <div>
-              <h3>Explorate</h3>
-              <h6>About</h6>
-              <h6>About</h6>
-              <h6>About</h6>
-            </div>
-            <div>
-              <h3>Headquarter</h3>
-              <h6>About</h6>
-              <h6>About</h6>
-              <h6>About</h6>
-            </div>
-            <div>
-              <h3>Connections</h3>
-              <img />
-              <img />
-              <img />
-              <img />
-            </div>
-          </div>
-        </footer>
-        <section className="extra-footer">
-          <div className="container extra-footer__container">
-            <span>2021 | RUNO Publisher Studio</span>
-            <span>Subscribe Now</span>
-          </div>
-        </section>
         </body>
     </html>
   )
