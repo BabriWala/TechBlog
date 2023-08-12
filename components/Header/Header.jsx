@@ -1,12 +1,14 @@
 import Link from "next/link";
 import React from "react";
 import styles from "./header.module.css";
+import { BsFacebook } from 'react-icons/bs';
+import { AiFillLinkedin, AiFillGithub, AiFillInstagram } from 'react-icons/ai'
 
 const Header = () => {
   return (
-    <header>
-      <nav>
-        <div className={styles.container}>
+    <header className={styles.header}>
+      <nav className={styles.nav}>
+        <div className={`${styles.container} container`}>
           <div>
             <span className={styles.logo}>TechBlog</span>
           </div>
@@ -29,22 +31,22 @@ const Header = () => {
           <div>
             <li>
               <a href="#">
-                <i className={`${styles["fa-brands"]} fa-facebook`}></i>
+              <BsFacebook className={`${styles["fa-brands"]} fa-facebook`}></BsFacebook>
               </a>
             </li>
             <li>
               <a href="#">
-                <i className={`${styles["fa-brands"]} fa-instagram`}></i>
+                <AiFillInstagram className={`${styles["fa-brands"]} fa-instagram`}></AiFillInstagram>
               </a>
             </li>
             <li>
               <a href="#">
-                <i className={`${styles["fa-brands"]} fa-linkedin`}></i>
+                <AiFillLinkedin className={`${styles["fa-brands"]} fa-linkedin`}></AiFillLinkedin>
               </a>
             </li>
             <li>
               <a href="#">
-                <i className={`${styles["fa-brands"]} fa-github`}></i>
+                <AiFillGithub className={`${styles["fa-brands"]} fa-github`}></AiFillGithub>
               </a>
             </li>
           </div>

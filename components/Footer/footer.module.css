@@ -1,5 +1,5 @@
 /* Footer  */
-footer {
+.footer {
   background: #212529;
   padding: 100px 0;
 }
@@ -49,7 +49,7 @@ footer {
 
 /* ===== Media Screen */
 @media only screen and (max-width: 576px) {
-  footer {
+  .footer {
     padding: 50px 0;
   }
 
@@ -67,7 +67,7 @@ footer {
 }
 
 @media only screen and (min-width: 576px) and (max-width: 768px) {
-  footer {
+  .footer {
     padding: 50px 0;
   }
 
@@ -85,7 +85,7 @@ footer {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
-  footer {
+  .footer {
     padding: 50px 0;
   }
 

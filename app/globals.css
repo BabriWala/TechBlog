@@ -1,13 +1,13 @@
 /* ===== Global CSS */
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap');
 
-:root{
+/* :root{
     --body-font-family : 'Lora', serif;
     --primary-font-family : 'Roboto', sans-serif;
 
     --primary-color : #FAD364;
     --secondary-color: #34342C;
-}
+} */
 
 *{
     margin: 0;
@@ -19,7 +19,7 @@ a{
     text-decoration: none;
 }
 
-body{
+html, body{
     font-family: var(--body-font-family);
     color: #fff;
 }
@@ -49,64 +49,6 @@ img{
 }
 
 
-/* .banner-section{
-    overflow: hidden;
-} */
-
-.banner{
-    position: absolute;
-    bottom: 15%;
-    left: 0;
-    right: 0;
-    margin: auto;
-    text-align: center;
-    /* width: 100%; */
-    
-}
-
-.banner__tag{
-    padding: 10px 5px;
-    border-radius: 8px;
-    background: rgba(255, 255, 255, 0.15);
-    color: #fff;
-    display: inline-block;
-    cursor: pointer;
-}
-
-.banner__title{
-    color: #FFF;
-font-family: Lora;
-font-size: 36px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-width: 70%;
-margin: 20px auto;
-
-}
-
-.horizontal-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.banner__date{
-    color: #E5E5E5;
-font-family: Lora;
-font-size: 12px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-margin: 10px 10px
-}
-
-.horizontal-line{
-    width: 30px;
-    height: 1px;
-    background: #E5E5E5;
-    display: inline-block;
-}
 
 
 /* Topics Section */
@@ -358,6 +300,11 @@ margin-bottom: 20px;
 
 /* ===== Media Screen */
 @media only screen and (max-width: 576px) {
+    .container{
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
     /* === topics section
     */
 
@@ -410,6 +357,11 @@ margin-bottom: 20px;
     
 }
 @media only screen and (min-width: 576px) and (max-width: 768px) {
+    .container{
+        max-width: 540px;
+        margin: 0 auto
+    }
+
     /* === topics section
     */
 
@@ -474,27 +426,13 @@ margin-bottom: 20px;
     }
 }
 @media only screen and (min-width: 768px) and (max-width: 992px) {
-    header{
-        background-image: url('https://images.pexels.com/photos/2007647/pexels-photo-2007647.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-        background-color: rgba(0, 0, 0, 0.63);
-        
-    }
     .container{
         max-width: 720px;
         margin: 0 auto
     }
     
 
-    .banner__title{
-        font-size: 36px;
-        width: 100%;
-    }
-
-    .banner{
-        bottom: 10%;
-    }
-
-    /* === topics section
+       /* === topics section
     */
 
     .topics-section{
