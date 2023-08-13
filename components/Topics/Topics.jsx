@@ -36,7 +36,7 @@ const Topics = () => {
             earum. Officiis quidem numquam alias nostrum.
           </p>
           <div></div>
-          <button className={styles["btn topics__btn"]}>Read More</button>
+          <button className={`btn ${styles["topics__btn"]}`}>Read More</button>
         </div>
         <div className={styles["topics-items-container"]}>
           <div className={styles["topics-image-container"]}>
@@ -58,7 +58,7 @@ const Topics = () => {
             earum. Officiis quidem numquam alias nostrum.
           </p>
           <div></div>
-          <button className={styles["btn topics__btn"]}>Read More</button>
+          <button className={`btn ${styles["topics__btn"]}`}>Read More</button>
         </div>
         <div className={styles["topics-items-container"]}>
           <div className={styles["topics-image-container"]}>
@@ -80,7 +80,7 @@ const Topics = () => {
             earum. Officiis quidem numquam alias nostrum.
           </p>
           <div></div>
-          <button className={styles["btn topics__btn"]}>Read More</button>
+          <button className={`btn ${styles["topics__btn"]}`}>Read More</button>
         </div>
         <div className={styles["topics-items-container"]}>
           <div className={styles["topics-image-container"]}>
@@ -102,7 +102,7 @@ const Topics = () => {
             earum. Officiis quidem numquam alias nostrum.
           </p>
           <div></div>
-          <button className={styles["btn topics__btn"]}>Read More</button>
+          <button className={`btn ${styles["topics__btn"]}`}>Read More</button>
         </div>
         <div className={styles["topics-items-container"]}>
           <div className={styles["topics-image-container"]}>
@@ -124,7 +124,7 @@ const Topics = () => {
             earum. Officiis quidem numquam alias nostrum.
           </p>
           <div></div>
-          <button className={styles["btn topics__btn"]}>Read More</button>
+          <button className={`btn ${styles["topics__btn"]}`}>Read More</button>
         </div>
         <div className={styles["topics-items-container"]}>
           <div className={styles["topics-image-container"]}>
@@ -146,7 +146,7 @@ const Topics = () => {
             earum. Officiis quidem numquam alias nostrum.
           </p>
           <div></div>
-          <button className={styles["btn topics__btn"]}>Read More</button>
+          <button className={`btn ${styles["topics__btn"]}`}>Read More</button>
         </div>
         <div className={styles["topics-items-container"]}>
           <div className={styles["topics-image-container"]}>
@@ -168,7 +168,7 @@ const Topics = () => {
             earum. Officiis quidem numquam alias nostrum.
           </p>
           <div></div>
-          <button className={styles["btn topics__btn"]}>Read More</button>
+          <button className={`btn ${styles["topics__btn"]}`}>Read More</button>
         </div>
         <div className={styles["topics-items-container"]}>
           <div className={styles["topics-image-container"]}>
@@ -190,7 +190,7 @@ const Topics = () => {
             earum. Officiis quidem numquam alias nostrum.
           </p>
           <div></div>
-          <button className={styles["btn topics__btn"]}>Read More</button>
+          <button className={`btn ${styles["topics__btn"]}`}>Read More</button>
         </div>
         <div className={styles["topics-items-container"]}>
           <div className={styles["topics-image-container"]}>
@@ -212,7 +212,7 @@ const Topics = () => {
             earum. Officiis quidem numquam alias nostrum.
           </p>
           <div></div>
-          <button className={styles["btn topics__btn"]}>Read More</button>
+          <button className={`btn ${styles["topics__btn"]}`}>Read More</button>
         </div>
         <div className={styles["topics-items-container"]}>
           <div className={styles["topics-image-container"]}>
@@ -234,7 +234,7 @@ const Topics = () => {
             earum. Officiis quidem numquam alias nostrum.
           </p>
           <div></div>
-          <button className={styles["btn topics__btn"]}>Read More</button>
+          <button className={`btn ${styles["topics__btn"]}`}>Read More</button>
         </div>
         <div className={styles["topics-items-container"]}>
           <div className={styles["topics-image-container"]}>
@@ -256,7 +256,7 @@ const Topics = () => {
             earum. Officiis quidem numquam alias nostrum.
           </p>
           <div></div>
-          <button className={styles["btn topics__btn"]}>Read More</button>
+          <button className={`btn ${styles["topics__btn"]}`}>Read More</button>
         </div>
       </div>
     </section>
