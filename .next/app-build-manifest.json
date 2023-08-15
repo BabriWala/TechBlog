@@ -27,6 +27,7 @@
     "/blogs/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
+      "static/css/app/blogs/page.css",
       "static/chunks/app/blogs/page.js"
     ]
   }
