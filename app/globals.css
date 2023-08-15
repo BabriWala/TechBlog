@@ -44,8 +44,25 @@ a {
   color: #fff;
 }
 
+iframe, img{
+  width: 100%;
+}
+
+iframe{
+  border-radius: 10px;
+}
+
+
 img {
   width: 100%;
+}
+
+input, textarea{
+  padding: 8px;
+}
+
+label{
+  columns: rgba(0, 0, 0, 0.765);
 }
 
 .btn {
