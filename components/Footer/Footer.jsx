@@ -1,5 +1,11 @@
-import React from "react";
+"use client"
+import React, { useEffect } from "react";
+
 import styles from "./footer.module.css";
+import Cursor from "../Cursor/Cursor";
+
+
+
 
 const Footer = () => {
   return (
@@ -38,6 +44,7 @@ const Footer = () => {
           <span>Subscribe Now</span>
         </div>
       </section>
+      <Cursor></Cursor>
     </>
   );
 };
