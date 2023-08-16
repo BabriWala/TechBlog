@@ -1,0 +1,121 @@
+/* 
+=== Error ===
+*/
+.error {
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.error__title {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.error__description {
+  font-size: 40px;
+  margin: 15px 0;
+}
+
+.error__left-side {
+  width: 50%;
+}
+
+.error__right-side {
+  width: 50%;
+  text-align: center;
+}
+
+.error__main-title {
+  font-size: 280px;
+}
+
+.error__main-title > span:first-of-type,
+.error__main-title > span:last-of-type {
+  color: rgba(255, 183, 0, 0.891);
+}
+
+.error__btn:hover{
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.765);
+  color: rgba(0, 0, 0, 0.765);
+
+}
+
+.btn:hover > a{
+  color: rgba(0, 0, 0, 0.765);
+  
+}
+
+/* ===== Media Screen */
+@media only screen and (max-width: 576px) {
+  /* 
+=== Error ===
+*/
+  .error {
+    padding: 50px 10px;
+    flex-direction: column-reverse;
+  }
+
+  .error__title {
+    font-size: 60px;
+    margin-bottom: 10px;
+  }
+
+  .error__description {
+    font-size: 40px;
+    margin: 15px 0;
+  }
+
+  .error__left-side {
+    width: 100%;
+    text-align: center;
+  }
+
+  .error__right-side {
+    width: 100%;
+  }
+
+  .error__main-title {
+    font-size: 200px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  /* 
+    =header== Error ===
+    */
+  .error {
+    padding: 50px 10px;
+    flex-direction: column-reverse;
+  }
+
+  .error__title {
+    font-size: 60px;
+    margin-bottom: 10px;
+  }
+
+  .error__description {
+    font-size: 40px;
+    margin: 15px 0;
+  }
+
+  .error__left-side {
+    width: 100%;
+    text-align: center;
+  }
+
+  .error__right-side {
+    width: 100%;
+  }
+
+  .error__main-title {
+    font-size: 300px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  /* Error */
+  .error__main-title {
+    font-size: 200px;
+  }
+}
