@@ -1,6 +1,12 @@
+"use client"
+import { useSession } from "next-auth/react";
 import styles from "./blog.module.css";
 
 export default function Blgos() {
+
+  const session = useSession();
+  console.log(session)
+
   return (
     <section className={`container ${styles["topics-section"]}`}>
       <h2 className={styles["topics__section__title"]}>Popular Topics</h2>
