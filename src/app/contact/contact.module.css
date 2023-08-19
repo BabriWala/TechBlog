@@ -1,0 +1,97 @@
+/* 
+=== Contact ===
+*/
+
+.contact__container{
+    display: flex;
+    align-items: center;
+    padding: 100px 0;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.contact__left-side,
+.contact__right-side{
+    width: 45%;
+}
+
+
+.contact__banner{
+    border-radius: 5px;
+    /* margin: -100px 0; */
+}
+
+.contact__email-label,
+.contact__fullName-label,
+.contact__message-label,
+.contact__email-field,
+.contact__fullName-field,
+.contact__message-field
+{
+    width: 100%;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.contact__btn{
+    width: 100%;
+    padding: 8px 15px;
+    background-color: rgba(0, 0, 0, 0.765);
+    color: #fff;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    transition: 0.5s all ease-in-out;
+    cursor: pointer;
+}
+
+.contact__btn:hover, .contact__btn:hover i{
+    background-color: transparent;
+    border-color: #34342C;
+    color: #34342C;
+}
+
+.contact__btn i{
+    color: #fff;
+}
+
+.contact__btn:first-of-type{
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+
+/* ===== Media Screen */
+@media only screen and (max-width: 576px) {
+    /* 
+    === Contact ===
+    */
+
+    .contact__container{
+        padding: 50px 0;
+        flex-direction: column-reverse;
+    }
+
+    .contact__left-side,
+    .contact__right-side{
+        width: 100%;
+        padding-bottom: 50px;
+    }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+        /* 
+    === Contact ===
+    */
+
+    .contact__container{
+        padding: 50px 0;
+        flex-direction: column-reverse;
+    }
+
+    .contact__left-side,
+    .contact__right-side{
+        width: 100%;
+        padding-bottom: 50px;
+    }
+}
+
