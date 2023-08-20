@@ -12,7 +12,7 @@ export const GET = async(req) =>{
         return new NextResponse(posts, {status: 200})
 
     } catch (error) {
-
+        console.log(error)
          return new NextResponse("Databse Error", {status: 400})
 
     }
