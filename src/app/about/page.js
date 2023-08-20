@@ -1,7 +1,8 @@
+import FeaturedBlog from "@/src/components/FeaturedBlog/FeaturedBlog";
+import About from "@/src/components/about/About";
 import Image from "next/image";
 import React from "react";
-import FeaturedBlog from "@/components/FeaturedBlog/FeaturedBlog";
-import About from "@/components/about/About";
+
 
 const page = () => {
   return (

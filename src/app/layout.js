@@ -1,11 +1,12 @@
-import Header from "@/components/Header/Header";
+
 // import styles from './global.css'
 import "./globals.css";
 import { Inter } from "next/font/google";
 import Link from "next/link";
-import Footer from "@/components/Footer/Footer";
 import { lora, roboto } from "./font";
-import AuthProvider from "@/components/AuthProvider/AuthProvider";
+import Header from "../components/Header/Header";
+import Footer from "../components/Footer/Footer";
+import AuthProvider from "../components/AuthProvider/AuthProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 

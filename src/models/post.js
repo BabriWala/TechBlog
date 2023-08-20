@@ -1,29 +1,32 @@
 import mongoose from "mongoose";
 
 const {Schema} = mongoose;
+mongoose.Promise = global.Promise;
+
+
 
 const postSchema = new Schema({
     title: {
-        type: string,
+        type: String,
         required: true
     },
     description: {
-        type: string,
+        type: String,
         required: true
     },
     img: {
-        type: string,
+        type: String,
         required: true
     },
     content: {
-        type: string,
+        type: String,
         required: true
     },
     username: {
-        type: string,
+        type: String,
         required: true
     }},
     {timestamps: true}
 )
 
-export default mongoose.model("Post", postSchema);
+export default mongoose.models.Post || mongoose.model("Post", postSchema);
