@@ -1,3 +1,5 @@
+'use client'
+import { signIn } from 'next-auth/react';
 import styles from './login.module.css';
 export default function page() {
   return (
@@ -39,7 +41,7 @@ export default function page() {
             <p className={styles["loin__error"]}>
               Please Provide a Valid Email & Password
             </p>
-            <button className={styles["login__google login__btn"]}>
+            <button className={styles["login__google login__btn"]} onClick={()=> signIn("google")}>
               <i className={styles["fa-brands fa-google"]}></i> Loging With Google
             </button>
             <button className={styles["login__facebook login__btn"]}>
