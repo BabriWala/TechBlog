@@ -8,8 +8,8 @@ export default function Cursor() {
     const requestRef = useRef();
     const previousTimeRef = useRef();
     let [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-    const [width, setWidth] = useState(window.innerWidth);
-    const [height, setHeight] = useState(window.innerHeight);
+    const [width, setWidth] = useState(0);
+    const [height, setHeight] = useState(0);
     let cursorVisible = useState(false);
     let cursorEnlarged = useState(false);
   

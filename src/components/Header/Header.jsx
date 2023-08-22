@@ -49,7 +49,7 @@ const Header = () => {
                 <AiFillGithub className={`${styles["fa-brands"]} fa-github`}></AiFillGithub>
               </a>
             </li>
-            <Link href="/login"><button class="btn">Log In</button></Link>
+            <Link href="/signin"><button className="btn">Log In</button></Link>
           </div>
         </div>
       </nav>

@@ -1,5 +1,5 @@
 "use client"
-import { useSession } from "next-auth/react";
+import { signIn, useSession } from "next-auth/react";
 import styles from "./blog.module.css";
 
 export default function Blgos() {
@@ -17,6 +17,7 @@ export default function Blgos() {
           <span>Java</span>
           <span>React</span>
           <span>React</span>
+          <button onClick={()=> signIn("google")}>Sign IN</button>
         </span>
         <span className={styles["see-all"]}>View All</span>
       </div>
