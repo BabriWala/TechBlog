@@ -1,19 +1,19 @@
-Tech Blog 
+## Tech Blog 
 - Full Stack Blog Site
 
-Frontend Technologies
+# Frontend Technologies
 - HTML
 - CSS
 - JS
 - React
 - NextJS
 
-Backend Technologies
+# Backend Technologies
 - NextJS
 - ExpressJS
 - Moongoose
 - MongoDB
 
-Authentication
+# Authentication
 - Next Auth
 
