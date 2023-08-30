@@ -1,10 +1,17 @@
+"use client"
 import Link from "next/link";
 import React from "react";
 import styles from "./header.module.css";
 import { BsFacebook } from 'react-icons/bs';
 import { AiFillLinkedin, AiFillGithub, AiFillInstagram } from 'react-icons/ai'
+import { signOut, useSession } from "next-auth/react";
+
 
 const Header = () => {
+
+  const {data, status} = useSession()
+  console.log(data, status)
+
   return (
     <header className={styles.header}>
       <nav className={styles.nav}>
@@ -49,7 +56,13 @@ const Header = () => {
                 <AiFillGithub className={`${styles["fa-brands"]} fa-github`}></AiFillGithub>
               </a>
             </li>
-            <Link href="/signin"><button className="btn">Log In</button></Link>
+            {
+              data?.user?.email ?
+              <button onClick={()=>signOut()} className="btn">Log Out</button>
+              :
+              <button className="btn"><Link href="/signin">Log In</Link></button>
+            }
+            
           </div>
         </div>
       </nav>

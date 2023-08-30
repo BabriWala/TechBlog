@@ -50,8 +50,9 @@ export default function page() {
             <button className={styles["login__github login__btn"]}>
               <i className={styles["fa-brands fa-github"]}></i> Loging With Github
             </button>
-            <button onClick={()=> signIn("google")}>Sing In</button>
+            <button onClick={()=> signIn("google")}>Sign In</button>
             <button onClick={()=> signOut()}>Sign Out</button>
+            <button onClick={()=> signIn("google")}>Sign In</button>
           </form>
         </div>
       </div>

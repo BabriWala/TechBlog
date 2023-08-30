@@ -44,7 +44,7 @@ const Footer = () => {
           <span>Subscribe Now</span>
         </div>
       </section>
-      <Cursor></Cursor>
+      {/* <Cursor></Cursor>  */}
     </>
   );
 };
