@@ -38,7 +38,11 @@ export default function page() {
             />
 
             <button className={styles["login__btn"]}>LOGIN</button>
-            <p className={styles["loin__error"]}>
+            
+            {/* <button onClick={()=> signOut()}>Sign Out</button>
+            <button onClick={()=> signIn("google")}>Sign In</button> */}
+          </form>
+          <p className={styles["loin__error"]}>
               Please Provide a Valid Email & Password
             </p>
             <button className={styles["login__google login__btn"]} onClick={()=> signIn("google")}>
@@ -50,10 +54,7 @@ export default function page() {
             <button className={styles["login__github login__btn"]}>
               <i className={styles["fa-brands fa-github"]}></i> Loging With Github
             </button>
-            <button onClick={()=> signIn("google")}>Sign In</button>
-            <button onClick={()=> signOut()}>Sign Out</button>
-            <button onClick={()=> signIn("google")}>Sign In</button>
-          </form>
+            <button onClick={()=> signIn("google")}>Sign In with Google</button>
         </div>
       </div>
     </section>

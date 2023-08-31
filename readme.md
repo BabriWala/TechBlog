@@ -39,3 +39,4 @@ dashboard/login
 <!-- Font Optimization -->
 <!-- Server Side Rendering -->
 <!-- Nextjs Image Explained -->
+<!-- Generate Dynamic Meta Deta -->

@@ -1,5 +1,12 @@
+'use client'
 import React from "react";
 import styles from './contact.module.css'
+import { signIn } from "next-auth/react";
+
+// export const metadata = {
+//   title: "Tech Blog - Contact",
+//   description: "This is a Tech Blog Contact Page",
+// };
 
 const contact = () => {
   return (
@@ -52,6 +59,7 @@ const contact = () => {
 
             <button className={styles["contact__btn"]}>Send Message</button>
           </form>
+          <button onClick={()=> signIn('google')}>Google Login</button>
         </div>
       </div>
     </section>

@@ -1,15 +1,26 @@
+import { notFound } from "next/navigation";
 import React from "react";
 
 async function getData(id) {
     const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`)
   
     if (!res.ok) {
-      throw new Error('Failed to fetch data')
+      return notFound()
     }
    
     return res.json()
   }
 
+  export async function generateMetadata({ params}) {
+    // read route params
+    const post = await getData(params.id)
+   
+    return {
+      title: post.title,
+      description: post.body
+    }
+  }
+   
 
 const page = async ({params}) => {
     const data = await getData(params.id);
