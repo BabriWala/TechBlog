@@ -1,11 +1,26 @@
 "use client"
 import { signIn, useSession } from "next-auth/react";
 import styles from "./blog.module.css";
+import Link from "next/link";
 
-export default function Blgos() {
+async function getData() {
+  const res = await fetch('https://jsonplaceholder.typicode.com/posts')
+
+  if (!res.ok) {
+    throw new Error('Failed to fetch data')
+  }
+ 
+  return res.json()
+}
+
+
+export default async function Blgos() {
 
   const session = useSession();
   console.log(session)
+
+  const posts = await getData()
+
 
   return (
     <section className={`container ${styles["topics-section"]}`}>
@@ -22,7 +37,8 @@ export default function Blgos() {
         <span className={styles["see-all"]}>View All</span>
       </div>
       <div className={styles["topics-container"]}>
-        <div className={styles["topics-items-container"]}>
+        {
+          posts.map(post => <div className={styles["topics-items-container"]} key={post.id}>
           <div className={styles["topics-image-container"]}>
             <img
               src="https://images.pexels.com/photos/11035363/pexels-photo-11035363.jpeg?auto=compress&cs=tinysrgb&w=600"
@@ -32,172 +48,17 @@ export default function Blgos() {
           </div>
           <h6 className={styles["topics-items__date"]}>03.03.2003</h6>
           <h4 className={styles["topics-items__title"]}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
-            fuga?
+            {(post.title)}
           </h4>
           <p className={styles["topics-items__description"]}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-            quaerat ea illum perspiciatis laborum, eaque aliquid aspernatur
-            ipsa, assumenda repellendus laudantium accusamus blanditiis sit
-            earum. Officiis quidem numquam alias nostrum.
+            {post.body}
           </p>
           <div></div>
-          <button className={`btn ${styles["topics__btn"]}`}>Read More</button>
-        </div>
-        <div className={styles["topics-items-container"]}>
-          <div className={styles["topics-image-container"]}>
-            <img
-              src="https://images.pexels.com/photos/11035363/pexels-photo-11035363.jpeg?auto=compress&cs=tinysrgb&w=600"
-              alt=""
-            />
-            <span>JavaScript</span>
-          </div>
-          <h6 className={styles["topics-items__date"]}>03.03.2003</h6>
-          <h4 className={styles["topics-items__title"]}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
-            fuga?
-          </h4>
-          <p className={styles["topics-items__description"]}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-            quaerat ea illum perspiciatis laborum, eaque aliquid aspernatur
-            ipsa, assumenda repellendus laudantium accusamus blanditiis sit
-            earum. Officiis quidem numquam alias nostrum.
-          </p>
-          <div></div>
-          <button className={`btn ${styles["topics__btn"]}`}>Read More</button>
-        </div>
-        <div className={styles["topics-items-container"]}>
-          <div className={styles["topics-image-container"]}>
-            <img
-              src="https://images.pexels.com/photos/11035363/pexels-photo-11035363.jpeg?auto=compress&cs=tinysrgb&w=600"
-              alt=""
-            />
-            <span>JavaScript</span>
-          </div>
-          <h6 className={styles["topics-items__date"]}>03.03.2003</h6>
-          <h4 className={styles["topics-items__title"]}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
-            fuga?
-          </h4>
-          <p className={styles["topics-items__description"]}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-            quaerat ea illum perspiciatis laborum, eaque aliquid aspernatur
-            ipsa, assumenda repellendus laudantium accusamus blanditiis sit
-            earum. Officiis quidem numquam alias nostrum.
-          </p>
-          <div></div>
-          <button className={`btn ${styles["topics__btn"]}`}>Read More</button>
-        </div>
-        <div className={styles["topics-items-container"]}>
-          <div className={styles["topics-image-container"]}>
-            <img
-              src="https://images.pexels.com/photos/11035363/pexels-photo-11035363.jpeg?auto=compress&cs=tinysrgb&w=600"
-              alt=""
-            />
-            <span>JavaScript</span>
-          </div>
-          <h6 className={styles["topics-items__date"]}>03.03.2003</h6>
-          <h4 className={styles["topics-items__title"]}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
-            fuga?
-          </h4>
-          <p className={styles["topics-items__description"]}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-            quaerat ea illum perspiciatis laborum, eaque aliquid aspernatur
-            ipsa, assumenda repellendus laudantium accusamus blanditiis sit
-            earum. Officiis quidem numquam alias nostrum.
-          </p>
-          <div></div>
-          <button className={`btn ${styles["topics__btn"]}`}>Read More</button>
-        </div>
-        <div className={styles["topics-items-container"]}>
-          <div className={styles["topics-image-container"]}>
-            <img
-              src="https://images.pexels.com/photos/11035363/pexels-photo-11035363.jpeg?auto=compress&cs=tinysrgb&w=600"
-              alt=""
-            />
-            <span>JavaScript</span>
-          </div>
-          <h6 className={styles["topics-items__date"]}>03.03.2003</h6>
-          <h4 className={styles["topics-items__title"]}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
-            fuga?
-          </h4>
-          <p className={styles["topics-items__description"]}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-            quaerat ea illum perspiciatis laborum, eaque aliquid aspernatur
-            ipsa, assumenda repellendus laudantium accusamus blanditiis sit
-            earum. Officiis quidem numquam alias nostrum.
-          </p>
-          <div></div>
-          <button className={`btn ${styles["topics__btn"]}`}>Read More</button>
-        </div>
-        <div className={styles["topics-items-container"]}>
-          <div className={styles["topics-image-container"]}>
-            <img
-              src="https://images.pexels.com/photos/11035363/pexels-photo-11035363.jpeg?auto=compress&cs=tinysrgb&w=600"
-              alt=""
-            />
-            <span>JavaScript</span>
-          </div>
-          <h6 className={styles["topics-items__date"]}>03.03.2003</h6>
-          <h4 className={styles["topics-items__title"]}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
-            fuga?
-          </h4>
-          <p className={styles["topics-items__description"]}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-            quaerat ea illum perspiciatis laborum, eaque aliquid aspernatur
-            ipsa, assumenda repellendus laudantium accusamus blanditiis sit
-            earum. Officiis quidem numquam alias nostrum.
-          </p>
-          <div></div>
-          <button className={`btn ${styles["topics__btn"]}`}>Read More</button>
-        </div>
-        <div className={styles["topics-items-container"]}>
-          <div className={styles["topics-image-container"]}>
-            <img
-              src="https://images.pexels.com/photos/11035363/pexels-photo-11035363.jpeg?auto=compress&cs=tinysrgb&w=600"
-              alt=""
-            />
-            <span>JavaScript</span>
-          </div>
-          <h6 className={styles["topics-items__date"]}>03.03.2003</h6>
-          <h4 className={styles["topics-items__title"]}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
-            fuga?
-          </h4>
-          <p className={styles["topics-items__description"]}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-            quaerat ea illum perspiciatis laborum, eaque aliquid aspernatur
-            ipsa, assumenda repellendus laudantium accusamus blanditiis sit
-            earum. Officiis quidem numquam alias nostrum.
-          </p>
-          <div></div>
-          <button className={`btn ${styles["topics__btn"]}`}>Read More</button>
-        </div>
-        <div className={styles["topics-items-container"]}>
-          <div className={styles["topics-image-container"]}>
-            <img
-              src="https://images.pexels.com/photos/11035363/pexels-photo-11035363.jpeg?auto=compress&cs=tinysrgb&w=600"
-              alt=""
-            />
-            <span>JavaScript</span>
-          </div>
-          <h6 className={styles["topics-items__date"]}>03.03.2003</h6>
-          <h4 className={styles["topics-items__title"]}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
-            fuga?
-          </h4>
-          <p className={styles["topics-items__description"]}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-            quaerat ea illum perspiciatis laborum, eaque aliquid aspernatur
-            ipsa, assumenda repellendus laudantium accusamus blanditiis sit
-            earum. Officiis quidem numquam alias nostrum.
-          </p>
-          <div></div>
-          <button className={`btn ${styles["topics__btn"]}`}>Read More</button>
-        </div>
+          <Link href={`/blogs/${post.id}`}><button  className={`btn ${styles["topics__btn"]}`}>Read More</button></Link>
+        </div>)
+        }
+        
+
       </div>
 
     </section>
