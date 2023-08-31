@@ -36,3 +36,6 @@ dashboard/login
 <!-- signle page layout -->
 <!-- Dynamic Link Added -->
 <!-- Loading Page added -->
+<!-- Font Optimization -->
+<!-- Server Side Rendering -->
+<!-- Nextjs Image Explained -->

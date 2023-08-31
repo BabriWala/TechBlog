@@ -5,16 +5,19 @@ import styles from "./header.module.css";
 import { BsFacebook } from 'react-icons/bs';
 import { AiFillLinkedin, AiFillGithub, AiFillInstagram } from 'react-icons/ai'
 import { signOut, useSession } from "next-auth/react";
+import {usePathname} from 'next/navigation';
 
 
 const Header = () => {
 
   const {data, status} = useSession()
-  console.log(data, status)
+  const pathname = usePathname();
+  console.log(pathname)
+  // console.log(data, status)
 
   return (
-    <header className={styles.header}>
-      <nav className={styles.nav}>
+    <header className={pathname == '/' ? styles.header : styles['main-header']} id="header">
+      <nav className={pathname == '/' ? styles.nav : styles['header-nav']}>
         <div className={`${styles.container} container`}>
           <div>
             <span className={styles.logo}>TechBlog</span>
@@ -22,7 +25,7 @@ const Header = () => {
           <div>
             <ul className={styles["nav-link-container"]}>
               <li>
-                <Link href="/">Home</Link>
+                <Link href="/#header">Home</Link>
               </li>
               <li>
                 <Link href="/about">About</Link>
@@ -35,7 +38,7 @@ const Header = () => {
               </li>
             </ul>
           </div>
-          <div>
+          <div className={styles.social}>
             <li>
               <a href="#">
               <BsFacebook className={`${styles["fa-brands"]} fa-facebook`}></BsFacebook>
@@ -66,7 +69,9 @@ const Header = () => {
           </div>
         </div>
       </nav>
-      <section className={`${styles.container} banner-section`}>
+      {
+        pathname == '/' && 
+        <section id="banner" className={`${styles.container} banner-section`}>
         <div className={styles.banner}>
           <h6 className={styles["banner__tag"]}>JavaScript</h6>
           <h2 className={styles["banner__title"]}>
@@ -81,6 +86,7 @@ const Header = () => {
           <button className={styles.btn}>Read More</button>
         </div>
       </section>
+      }
     </header>
   );
 };
