@@ -5,7 +5,7 @@
 
 .topics__section__title{
     color: #495057;
-    font-family: Lora;
+font-family: var(--primary-font-family);
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
@@ -21,7 +21,7 @@
 
 .topics-tags span{
     color: #495057;
-font-family: Lora;
+font-family: var(--primary-font-family);
 font-size: 12px;
 font-style: normal;
 font-weight: 700;
@@ -35,7 +35,7 @@ margin-right: 10px;
 .see-all{
     color: #495057;
     text-align: right;
-    font-family: Lora;
+    font-family: var(--primary-font-family);
     font-size: 12px;
     font-style: normal;
     font-weight: 700;
@@ -72,7 +72,7 @@ background: rgba(255, 255, 255, 0.15);
     padding: 8px;
     color: #FFF;
     text-align: right;
-    font-family: Roboto;
+    font-family: var(--body-font-family);
     font-size: 10px;
     font-style: normal;
     font-weight: 700;
@@ -81,7 +81,7 @@ background: rgba(255, 255, 255, 0.15);
 
 .topics-items__date{
     color: #6C757D;
-font-family: Lora;
+font-family: var(--primary-font-family);
 font-size: 12px;
 font-style: normal;
 font-weight: 400;
@@ -91,7 +91,7 @@ margin: 20px 0;
 
 .topics-items__title{
     color: #495057;
-font-family: Lora;
+font-family: var(--primary-font-family);
 font-size: 18px;
 font-style: normal;
 font-weight: 700;
@@ -100,7 +100,7 @@ margin-bottom: 20px;
 }
 .topics-items__description{
     color: #6C757D;
-font-family: Lora;
+font-family: var(--primary-font-family);
 font-size: 12px;
 font-style: normal;
 font-weight: 400;

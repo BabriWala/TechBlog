@@ -13,6 +13,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: var(--body-font-family);
+
 }
 /* html,
 body {
@@ -38,6 +40,7 @@ body {
 button {
   border: none;
   outline: none;
+  /* font-family: var(--body-font-family); */
 }
 
 .container {
@@ -102,7 +105,7 @@ label{
 
 .banner__date {
   color: #e5e5e5;
-  font-family: Lora;
+  font-family: var(--primary-font-family);
   font-size: 12px;
   font-style: normal;
   font-weight: 400;

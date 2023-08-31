@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap');
 
 :root{
-    --body-font-family : 'Lora', serif;
-    --primary-font-family : 'Roboto', sans-serif;
+    --body- : 'Lora', serif;
+    --primary- : 'Roboto', sans-serif;
 
     --primary-color : #FAD364;
     --secondary-color: #34342C;
@@ -20,7 +20,7 @@ a{
 }
 
 body{
-    font-family: var(--body-font-family);
+    : var(--body-);
     color: #fff;
 }
 
@@ -66,7 +66,7 @@ nav{
 
 .logo{
     color: #F8F9FA;
-    font-family: 'Times New Roman', serif;
+    : 'Times New Roman', serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
@@ -75,7 +75,7 @@ nav{
 
 .nav-link-container li a{
     color: #FFF;
-    font-family: var(--primary-font-family);
+    : var(--primary-);
     font-size: 12px;
     font-style: normal;
     font-weight: 700;
@@ -137,7 +137,7 @@ nav .container{
 
 .banner__title{
     color: #FFF;
-font-family: Lora;
+: Lora;
 font-size: 36px;
 font-style: normal;
 font-weight: 700;
@@ -155,7 +155,7 @@ margin: 20px auto;
 
 .banner__date{
     color: #E5E5E5;
-font-family: Lora;
+: Lora;
 font-size: 12px;
 font-style: normal;
 font-weight: 400;
@@ -178,7 +178,7 @@ margin: 10px 10px
 
 .topics__section__title{
     color: #495057;
-    font-family: Lora;
+    : Lora;
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
@@ -194,7 +194,7 @@ margin: 10px 10px
 
 .topics-tags span{
     color: #495057;
-font-family: Lora;
+: Lora;
 font-size: 12px;
 font-style: normal;
 font-weight: 700;
@@ -208,7 +208,7 @@ margin-right: 10px;
 .see-all{
     color: #495057;
     text-align: right;
-    font-family: Lora;
+    : Lora;
     font-size: 12px;
     font-style: normal;
     font-weight: 700;
@@ -245,7 +245,7 @@ background: rgba(255, 255, 255, 0.15);
     padding: 8px;
     color: #FFF;
     text-align: right;
-    font-family: Roboto;
+    : Roboto;
     font-size: 10px;
     font-style: normal;
     font-weight: 700;
@@ -254,7 +254,7 @@ background: rgba(255, 255, 255, 0.15);
 
 .topics-items__date{
     color: #6C757D;
-font-family: Lora;
+: Lora;
 font-size: 12px;
 font-style: normal;
 font-weight: 400;
@@ -264,7 +264,7 @@ margin: 20px 0;
 
 .topics-items__title{
     color: #495057;
-font-family: Lora;
+: Lora;
 font-size: 18px;
 font-style: normal;
 font-weight: 700;
@@ -273,7 +273,7 @@ margin-bottom: 20px;
 }
 .topics-items__description{
     color: #6C757D;
-font-family: Lora;
+: Lora;
 font-size: 12px;
 font-style: normal;
 font-weight: 400;
@@ -305,7 +305,7 @@ footer{
 
 .footer-container div h3{
     color: #FFF;
-    font-family: Lora;
+    : Lora;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
@@ -314,7 +314,7 @@ footer{
 
 .footer-container div h6{
     color: #E5E5E5;
-    font-family: Lora;
+    : Lora;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -334,7 +334,7 @@ footer{
 
 .extra-footer__container span{
     color: #E5E5E5;
-    font-family: Lora;
+    : Lora;
     font-size: 14px;
     font-style: normal;
     font-weight: 700;

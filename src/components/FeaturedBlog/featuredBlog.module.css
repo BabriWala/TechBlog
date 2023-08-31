@@ -5,7 +5,7 @@
 
 .featured-blog__title {
   color: #495057;
-  font-family: Lora;
+  : Lora;
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
@@ -39,7 +39,7 @@
   padding: 5px 10px;
   color: #fff;
   text-align: right;
-  font-family: Roboto;
+  : Roboto;
   font-size: 10px;
   font-style: normal;
   font-weight: 700;
@@ -56,7 +56,7 @@
 
 .featured-blog-item__date {
   color: #e5e5e5;
-  font-family: Lora;
+  : Lora;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -64,7 +64,7 @@
 }
 .featured-blog-item__title {
   color: #fff;
-  font-family: Lora;
+  : Lora;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -73,7 +73,7 @@
 }
 .featured-blog-item__description {
   color: #e5e5e5;
-  font-family: Lora;
+  : Lora;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;

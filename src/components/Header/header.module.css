@@ -16,7 +16,7 @@
 
 .logo{
     color: #F8F9FA;
-    font-family: 'Times New Roman', serif;
+    font-family: var(--body-font-family);
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
@@ -25,7 +25,7 @@
 
 .nav-link-container li a{
     color: #FFF;
-    font-family: var(--primary-font-family);
+    font-family: var(--primary-);
     font-size: 12px;
     font-style: normal;
     font-weight: 700;
@@ -87,7 +87,7 @@
 
 .banner__title{
     color: #FFF;
-font-family: Lora;
+font-family: var(--primary-font-family);
 font-size: 36px;
 font-style: normal;
 font-weight: 700;
@@ -105,7 +105,7 @@ margin: 20px auto;
 
 .banner__date{
     color: #E5E5E5;
-font-family: Lora;
+font-family: var(--primary-font-family);
 font-size: 12px;
 font-style: normal;
 font-weight: 400;

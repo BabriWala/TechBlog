@@ -1,14 +1,17 @@
 
 // import styles from './global.css'
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Inter, Lora, Roboto } from "next/font/google";
 import Link from "next/link";
-import { lora, roboto } from "./font";
+// import { lora, roboto } from "./font";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 import AuthProvider from "../components/AuthProvider/AuthProvider";
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
+
+const lora = Lora({ subsets: ["latin"], variable: '--body-font-family' });
+const roboto = Roboto({ subsets: ["latin"], weight: '400', display: 'swap', variable: '--primary-font-family'});
 
 export const metadata = {
   title: "Create Next App",

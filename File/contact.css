@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap');
 
 :root{
-    --body-font-family : 'Lora', serif;
-    --primary-font-family : 'Roboto', sans-serif;
+    --body- : 'Lora', serif;
+    --primary- : 'Roboto', sans-serif;
 
     --primary-color : #FAD364;
     --secondary-color: #34342C;
@@ -20,7 +20,7 @@ a{
 }
 
 body{
-    font-family: var(--body-font-family);
+    : var(--body-);
     color: rgba(0, 0, 0, 0.765);
 }
 
@@ -65,7 +65,7 @@ nav{
 
 .logo{
     color: rgba(0, 0, 0, 0.765);
-    font-family: 'Times New Roman', serif;
+    : 'Times New Roman', serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
@@ -74,7 +74,7 @@ nav{
 
 .nav-link-container li a{
     color: rgba(0, 0, 0, 0.765);
-    font-family: var(--primary-font-family);
+    : var(--primary-);
     font-size: 12px;
     font-style: normal;
     font-weight: 700;
@@ -197,7 +197,7 @@ footer{
 
 .footer-container div h3{
     color: #FFF;
-    font-family: Lora;
+    : Lora;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
@@ -206,7 +206,7 @@ footer{
 
 .footer-container div h6{
     color: #E5E5E5;
-    font-family: Lora;
+    : Lora;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -226,7 +226,7 @@ footer{
 
 .extra-footer__container span{
     color: #E5E5E5;
-    font-family: Lora;
+    : Lora;
     font-size: 14px;
     font-style: normal;
     font-weight: 700;

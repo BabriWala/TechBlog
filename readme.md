@@ -35,3 +35,4 @@ dashboard/login
 
 <!-- signle page layout -->
 <!-- Dynamic Link Added -->
+<!-- Loading Page added -->
