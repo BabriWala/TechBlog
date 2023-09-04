@@ -1,6 +1,42 @@
-import styles from './signup.module.css';
+"use client";
+
+import { useState } from "react";
+import styles from "./signup.module.css";
+import { useRouter } from "next/navigation";
 export default function page() {
-  return(
+
+  const [error, setError] = useState("");
+  const router = useRouter()
+
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    // console.log(e.target);
+    const firstName = e.target[0].value;
+    const lastName = e.target[1].value;
+    const fullName = firstName + ' ' + lastName;
+    const email = e.target[2].value;
+    const password = e.target[3].value;
+    const image = e.target[4].value;
+    console.log(fullName, email, password, image)
+    try{
+      const res = await fetch('/api/auth/register',{
+        method: 'POST',
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({fullName, email, password, image})
+      })
+
+      res.status === 201 && router.push('/login?success=Account has been created')
+    }catch(err){
+      console.log(err)
+      setError(err)
+    }
+
+  };
+
+  return (
     <section className={`${styles.signup} container`}>
       <div className={styles["signup__container"]}>
         <div className={styles["signup__left-side"]}>
@@ -10,9 +46,9 @@ export default function page() {
           />
         </div>
         <div className={styles["signup__right-side"]}>
-          <form>
+          <form onSubmit={handleSubmit}>
             <label
-              for="firstName"
+              htmlFor="firstName"
               className={styles["signup__firstName-label"]}
             >
               Enter Your First Name:
@@ -25,7 +61,7 @@ export default function page() {
               placeholder="Enter Your First Name"
             />
 
-            <label for="lastName" className={styles["signup__lastName-label"]}>
+            <label htmlFor="lastName" className={styles["signup__lastName-label"]}>
               Enter Your Last Name:
             </label>
             <input
@@ -36,7 +72,7 @@ export default function page() {
               placeholder="Enter Your Last Name"
             />
 
-            <label for="email" className={styles["signup__email-label"]}>
+            <label htmlFor="email" className={styles["signup__email-label"]}>
               Enter Your Email:
             </label>
             <input
@@ -47,7 +83,7 @@ export default function page() {
               placeholder="Enter Your Email"
             />
 
-            <label for="password" className={styles["signup__password-label"]}>
+            <label htmlFor="password" className={styles["signup__password-label"]}>
               Enter Your Password:
             </label>
             <input
@@ -58,8 +94,8 @@ export default function page() {
               placeholder="Enter Your Password"
             />
 
-            <input type="file" name="image" id="image" />
-            <label for="image">Upload Your Picture</label>
+            <label htmlFor="image">Enter Your Picture Link</label>
+            <input type="text" name="image" id="image" placeholder="Enter Your Image Link" />
 
             <button className={styles["signup__btn"]} type="submit">
               SIGN UP

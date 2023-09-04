@@ -39,7 +39,7 @@ export default function page() {
 
             <button className={styles["login__btn"]}>LOGIN</button>
             
-            {/* <button onClick={()=> signOut()}>Sign Out</button>
+            {/* <buttofn onClick={()=> signOut()}>Sign Out</buttofn>
             <button onClick={()=> signIn("google")}>Sign In</button> */}
           </form>
           <p className={styles["loin__error"]}>

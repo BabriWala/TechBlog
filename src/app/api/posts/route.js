@@ -4,6 +4,7 @@ import connection from "@/src/utilities/db"
 import { NextResponse } from "next/server"
 
 export const GET = async(req) =>{
+    // console.log(req)
 
     try {
         await connection();
